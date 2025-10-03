@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page */
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  font-size: 15px;
+}
+
+.container {
+  width: 100%;          /* take full width */
+  padding: 20px;        /* spacing inside */
+}
+
+
+/* Title */
+h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #1a365d;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Controls (Search & Filters) */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+.controls input[type="text"],
+.controls input[type="date"] {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 180px;
+}
+
+.controls label {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.controls button {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.controls button:hover {
+  background-color: #1e4db7;
+}
+
+.controls button:last-of-type {
+  background-color: #6b7280;
+}
+
+.controls button:last-of-type:hover {
+  background-color: #4b5563;
+}
+
+/* Make the search bar longer & taller */
+.search-input {
+  width: 300px;   /* adjust as you like */
+  height: 40px;   /* taller than default */
+  padding: 0 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Table Wrapper */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+/* Hide ID column for users but keep it in the DOM */
+.hidden-id {
+  display: none;
+}
+
+
+/* Table */
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  table-layout: auto;
+}
+
+.logs-table th,
+.logs-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.logs-table th {
+  background-color: #f0f4f8;
+  color: #1a365d;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.logs-table tr:hover td {
+  background-color: #f9fafc;
+}
+
+.logs-table td {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.pagination button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination button:hover {
+  background-color: #1e4db7;
+}
+
+.pagination button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 14px;
+  color: #444;
+}
+
+
+
+/*.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f4f4f4;
+}*/
+
