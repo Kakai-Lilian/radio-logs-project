@@ -36,10 +36,21 @@ function App() {
   };
 
   // initial load and when page changes
-  useEffect(() => {
+ useEffect(() => {
+  // fetch immediately
+  fetchLogs();
+
+  // auto-refresh every 10 seconds
+  const interval = setInterval(() => {
     fetchLogs();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page]);
+  }, 10000);
+
+  // cleanup when component unmounts
+  return () => clearInterval(interval);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [page]);
+;
 
   // debounce search input to avoid too many calls
   const onRadioChange = (e) => {
